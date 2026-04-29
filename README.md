@@ -142,6 +142,7 @@ public class HomeController {
 ```
 ### application.properties:
 ```
-server.port=8081
+server.port=8080
 ```
 ### Output : 
+<img width="1919" height="960" alt="image" src="https://github.com/user-attachments/assets/b50945e8-d465-4e0d-8146-047ec73f3a5a" />
