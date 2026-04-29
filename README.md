@@ -4,49 +4,17 @@
 To develop a Simple Spring Boot MVC (Model-View-Controller) Application that uses a Controller to handle HTTP requests, a Model to pass data, and a View (Thymeleaf) to render dynamic HTML pages.
 
 ## ALGORITHM:
-Create a New Spring Boot Project:
-
-Use Spring Initializr
-
-Add dependencies:
-
-Spring Web
-
-Thymeleaf
-
-Set Up Project Structure:
-
-Create the main class annotated with @SpringBootApplication
-
-Create a Controller class using @Controller
-
-Add HTML templates under src/main/resources/templates
-
-Create a Controller:
-
-Define a method to handle HTTP GET requests using @GetMapping
-
-Return a view name (HTML page name) from the controller
-
-Pass data to the view using Model object
-
-Create a Model (Optional):
-
-Define a simple POJO class if you need to pass structured data to the view
-
-Create View Pages (HTML using Thymeleaf):
-
-Create an HTML file inside the templates folder
-
-Use Thymeleaf syntax (e.g., ${name}) to render dynamic content
-
-Run the Application:
-
-Run the Spring Boot application from your IDE or command line
-
-Access the Application:
-
-Open a browser and navigate to http://localhost:8080/
+1. Create a project using Spring Initializr  
+2. Add dependencies: Spring Web, Thymeleaf  
+3. Set up the main application class  
+4. Create a controller to handle requests  
+5. Define a method for the home page  
+6. Pass data from controller to view  
+7. Create HTML file in `templates` folder  
+8. Add basic CSS styles (inside HTML or separate file)  
+9. Use Thymeleaf to display data  
+10. Run the application  
+11. Open http://localhost:8080/ in browser  
 ## PROGRAM
 ```
 spring-mvc-demo/
