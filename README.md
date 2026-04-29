@@ -121,22 +121,55 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping("/mvc")
     public String homePage(Model model) {
         model.addAttribute("message", "Welcome to Spring Boot MVC!");
-        return "index";  // refers to index.html in templates folder
+        return "index";  
     }
 }
 ```
 ### index.html (View – inside src/main/resources/templates/):
 ```html
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <title>Spring MVC</title>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1 th:text="${message}">Default Message</h1>
+
+    <div class="card">
+        <h1>Welcome</h1>
+        <p>This is your Spring Boot page</p>
+    </div>
+
 </body>
 </html>
 ```
@@ -145,4 +178,4 @@ public class HomeController {
 server.port=8080
 ```
 ### Output : 
-<img width="1919" height="960" alt="image" src="https://github.com/user-attachments/assets/b50945e8-d465-4e0d-8146-047ec73f3a5a" />
+<img width="1915" height="965" alt="image" src="https://github.com/user-attachments/assets/e2aee3cd-d3f6-4af3-846e-19c4405bc502" />
